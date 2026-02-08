@@ -227,5 +227,13 @@ http://localhost:3000 (User: admin | Pass: admin)
 
 
 ## ⚖️ Credits & Provenance
-* **Model Logic:** The Scikit-Learn Iris model and base API structure were provided by [Original Author/Bootcamp Name].
-* **Infrastructure & Security:** All Nginx configurations, Docker orchestration fixes, SSL/Auth implementations, and the Prometheus/Grafana monitoring stack were architected and debugged by me to create a production-ready environment.
+
+
+- **Original Foundation:** This project originated from the DevOps (Nginx) curriculum by DataScientestc and was build during the Nginx module. 
+- **Base Features:** The initial concepts for SSL, Authentication, and Rate Limiting were based on lesson modules; the Iris classifier model was provided as the baseline codebase.
+* **Engineering & Debugging (My Contribution):** 
+    * **Logic Correction:** Identified and resolved critical configuration errors in the "Security and Monitoring" module that prevented service connectivity.
+    * **Architecture Refactor:** Re-engineered the internal monitoring loop (SSL bypass) to resolve HTTPS redirect traps and implemented portable CIDR masking (`/12`) to ensure the stack functions outside of a local virtual machine/for multi-environment compatibility.
+    * **Stack Validation:** Stress-tested the Nginx load-balancing and rate-limiting logic to verify production stability.
+    * **Documentation & Observability:** Architected the comprehensive README and internal technical annotations to ensure "Reference-Level" clarity and future maintainability.
+
